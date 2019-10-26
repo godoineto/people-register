@@ -1,4 +1,4 @@
-package com.people.register;
+package com.people.register.config;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.ObjectError;

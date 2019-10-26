@@ -1,4 +1,4 @@
-package com.people.register.person.v2.dto;
+package com.people.register.api.address.v1.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -8,7 +8,7 @@ import javax.validation.constraints.NotNull;
 
 @Getter
 @Setter
-public class AddressDTO {
+public class NewAddressV1DTO {
 
     @NotBlank(message = "{address.zipCode.invalid}")
     private String zipCode;

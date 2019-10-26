@@ -1,6 +1,6 @@
-package com.people.register.person.v1.dto;
+package com.people.register.api.person.v1.dto;
 
-import com.people.register.person.model.Gender;
+import com.people.register.api.person.model.Gender;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -9,7 +9,7 @@ import java.util.Date;
 
 @Getter
 @Setter
-public class PersonV1DTO {
+public class NewPersonV1DTO {
 
     @NotBlank(message = "{person.name.invalid}")
     private String name;
