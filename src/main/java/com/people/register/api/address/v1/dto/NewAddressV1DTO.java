@@ -5,12 +5,14 @@ import lombok.Setter;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 
 @Getter
 @Setter
 public class NewAddressV1DTO {
 
     @NotBlank(message = "{address.zipCode.invalid}")
+    @Pattern(regexp = "(^\\d{5}\\x2D\\d{3}$)", message = "{address.zipCode.invalid}")
     private String zipCode;
     @NotBlank(message = "{address.street.invalid}")
     private String street;
