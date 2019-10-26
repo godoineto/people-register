@@ -1,11 +1,13 @@
 package com.people.register.person.v2;
 
+import com.people.register.GeneralController;
 import com.people.register.person.model.Gender;
+import com.people.register.person.v2.dto.AddressDTO;
+import com.people.register.person.v2.dto.PersonV2DTO;
 import lombok.val;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -13,11 +15,16 @@ import java.util.List;
 
 @RestController
 @RequestMapping("v2/person")
-public class PersonV2Controller {
+public class PersonV2Controller implements GeneralController {
+
+    @PostMapping
+    public void add(@RequestBody @Valid PersonV2DTO newPerson) {
+
+    }
 
     @GetMapping
-    public List<PersonDTO> list() {
-        val karol = new PersonDTO();
+    public List<PersonV2DTO> list() {
+        val karol = new PersonV2DTO();
         karol.setName("Karol G Siegel");
         karol.setGender(Gender.FEMALE);
         karol.setEmail("karolgs@hotmail.com");
@@ -34,7 +41,7 @@ public class PersonV2Controller {
         karolAddress.setStreet("Rua da Pedra");
         karolAddress.setZipCode("88137-072");
         karol.getAddress().add(karolAddress);
-        val neto = new PersonDTO();
+        val neto = new PersonV2DTO();
         neto.setName("Neto Godoi");
         neto.setGender(Gender.MALE);
         neto.setEmail("netogodoi.dev@gmail.com");
@@ -42,7 +49,7 @@ public class PersonV2Controller {
         neto.setPlaceOfBirth("Lages");
         neto.setCpf("089.457.839-11");
         neto.setBirth(new Date());
-        val lia = new PersonDTO();
+        val lia = new PersonV2DTO();
         lia.setName("Lia Siegel Godoi");
         lia.setGender(Gender.FEMALE);
         lia.setEmail("chowchowlia@gmail.com");
