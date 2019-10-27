@@ -1,5 +1,6 @@
 package com.people.register.api.person.v1.dto;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.people.register.api.person.model.Gender;
 import lombok.Getter;
 import lombok.Setter;
@@ -18,6 +19,7 @@ public class NewPersonV1DTO {
     private String email;
     @Past(message = "{person.birth.invalid}")
     @NotNull(message = "{person.birth.invalid}")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date birth;
     private String placeOfBirth;
     private String nationality;
