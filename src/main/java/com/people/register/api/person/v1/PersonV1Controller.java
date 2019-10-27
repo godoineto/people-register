@@ -1,10 +1,15 @@
 package com.people.register.api.person.v1;
 
 import com.people.register.api.person.model.Gender;
+import com.people.register.api.person.model.Person;
 import com.people.register.api.person.v1.dto.NewPersonV1DTO;
+import com.people.register.api.person.v1.dto.PersonV1DTO;
+import com.people.register.api.person.worker.PersonCreator;
 import com.people.register.config.GeneralController;
 import io.swagger.annotations.Api;
 import lombok.val;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -17,10 +22,18 @@ import java.util.List;
 @Api("Person V1")
 public class PersonV1Controller implements GeneralController {
 
+    @Autowired
+    private ModelMapper mapper;
+
+    @Autowired
+    private PersonCreator creator;
 
     @PostMapping
-    public void add(@RequestBody @Valid NewPersonV1DTO newPerson) {
-        System.out.println(newPerson);
+    public PersonV1DTO add(@RequestBody @Valid NewPersonV1DTO newPerson) {
+        return mapper.map(
+                creator.create(
+                        mapper.map(newPerson, Person.class)),
+                PersonV1DTO.class);
     }
 
     @GetMapping
