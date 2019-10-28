@@ -1,24 +1,20 @@
 package com.people.register.api.person.worker;
 
-import com.people.register.api.person.exception.PersonNotFoundException;
+import com.people.register.api.person.exception.CPFIsAlreadyinUseException;
 import com.people.register.api.person.model.Person;
 import com.people.register.api.person.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
-public class PersonLoader {
+public class PersonValidator {
 
     @Autowired
     private PersonRepository repository;
 
-    public List<Person> list() {
-        return repository.findAll();
-    }
-
-    public Person find(String id) {
-        return repository.findById(id).orElseThrow(PersonNotFoundException::new);
+    public void validate(Person person) {
+        repository.findByCpf(person.getCpf()).ifPresent(ignored -> {
+            throw new CPFIsAlreadyinUseException();
+        });
     }
 }

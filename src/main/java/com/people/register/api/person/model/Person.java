@@ -23,6 +23,7 @@ public class Person {
     private Date birth;
     private String placeOfBirth;
     private String nationality;
+    @Indexed(name = "cpf")
     private String cpf;
     private List<Address> addresses;
 

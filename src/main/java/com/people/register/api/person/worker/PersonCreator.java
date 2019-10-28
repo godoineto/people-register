@@ -11,8 +11,11 @@ public class PersonCreator {
     @Autowired
     private PersonRepository repository;
 
+    @Autowired
+    private PersonValidator validator;
+
     public Person create(Person newPerson) {
-        //TODO: validate person
+        validator.validate(newPerson);
         return repository.save(newPerson);
     }
 }
