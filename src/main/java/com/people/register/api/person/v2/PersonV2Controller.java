@@ -18,8 +18,6 @@ import javax.websocket.server.PathParam;
 import java.lang.reflect.Type;
 import java.util.List;
 
-import static org.springframework.hateoas.server.mvc.WebMvcLinkBuilder.linkTo;
-
 @RestController
 @RequestMapping("v2/person")
 @Api(value = "Person V2")
@@ -36,9 +34,7 @@ public class PersonV2Controller implements GeneralController {
 
     @PostMapping
     public PersonV2DTO add(@RequestBody @Valid NewPersonV2DTO newPerson) {
-        PersonV2DTO result = mapper.map(creator.create(mapper.map(newPerson, Person.class)), PersonV2DTO.class);
-        result.setAddresses(linkTo(PersonV2Controller.class).slash(result.getId()).withSelfRel().getHref());
-        return result;
+        return mapper.map(creator.create(mapper.map(newPerson, Person.class)), PersonV2DTO.class);
     }
 
     @GetMapping("{personId}/addresses")
