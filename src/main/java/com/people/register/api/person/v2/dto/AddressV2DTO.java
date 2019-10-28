@@ -7,7 +7,6 @@ import lombok.Setter;
 @Setter
 public class AddressV2DTO {
 
-    private String id;
     private String zipCode;
     private String street;
     private Integer number;

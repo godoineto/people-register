@@ -6,7 +6,6 @@ import lombok.Setter;
 @Setter
 public class Address {
 
-    private String id;
     private String zipCode;
     private String street;
     private Integer number;

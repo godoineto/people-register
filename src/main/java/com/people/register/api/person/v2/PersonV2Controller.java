@@ -53,11 +53,6 @@ public class PersonV2Controller implements GeneralController {
         return mapper.map(loader.find(id), PersonV2DTO.class);
     }
 
-    @DeleteMapping("{id}")
-    public void delete(@PathVariable("id") String id) {
-        deleter.delete(id);
-    }
-
     @GetMapping
     public List<PersonV2DTO> list() {
         Type listType = new TypeToken<List<PersonV2DTO>>(){}.getType();

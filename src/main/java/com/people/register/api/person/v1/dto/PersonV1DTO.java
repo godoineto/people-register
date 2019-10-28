@@ -18,4 +18,7 @@ public class PersonV1DTO {
     private String placeOfBirth;
     private String nationality;
     private String cpf;
+
+    private Date createdAt;
+    private Date lastUpdate;
 }

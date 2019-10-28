@@ -27,6 +27,13 @@ public class Person {
     private String cpf;
     private List<Address> addresses;
 
+    private Date createdAt;
+    private Date lastUpdate;
+
+    public Person() {
+        createdAt = new Date();
+    }
+
     public Person update(Person person) {
         this.name = person.getName();
         this.gender = person.getGender();
@@ -36,6 +43,7 @@ public class Person {
         this.nationality = person.getNationality();
         this.cpf = person.getCpf();
         this.addresses = person.getAddresses();
+        this.lastUpdate = new Date();
         return this;
     }
 }
