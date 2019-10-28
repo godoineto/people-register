@@ -1,5 +1,6 @@
 package com.people.register.api.person.worker;
 
+import com.people.register.api.person.exception.PersonNotFound;
 import com.people.register.api.person.model.Person;
 import com.people.register.api.person.repository.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,6 @@ public class PersonLoader {
     }
 
     public Person find(String id) {
-        return repository.findById(id).get();
+        return repository.findById(id).orElseThrow(PersonNotFound::new);
     }
 }

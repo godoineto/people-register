@@ -4,6 +4,7 @@ import com.people.register.api.person.model.Person;
 import com.people.register.api.person.v1.dto.NewPersonV1DTO;
 import com.people.register.api.person.v1.dto.PersonV1DTO;
 import com.people.register.api.person.worker.PersonCreator;
+import com.people.register.api.person.worker.PersonDeleter;
 import com.people.register.api.person.worker.PersonLoader;
 import com.people.register.config.GeneralController;
 import io.swagger.annotations.Api;
@@ -30,6 +31,9 @@ public class PersonV1Controller implements GeneralController {
     @Autowired
     private PersonLoader loader;
 
+    @Autowired
+    private PersonDeleter deleter;
+
     @PostMapping
     public PersonV1DTO add(@RequestBody @Valid NewPersonV1DTO newPerson) {
         return mapper.map(
@@ -41,6 +45,11 @@ public class PersonV1Controller implements GeneralController {
     @GetMapping("{id}")
     public PersonV1DTO load(@PathVariable("id") String id) {
         return mapper.map(loader.find(id), PersonV1DTO.class);
+    }
+
+    @DeleteMapping("{id}")
+    public void delete(@PathVariable("id") String id) {
+        deleter.delete(id);
     }
 
     @GetMapping
