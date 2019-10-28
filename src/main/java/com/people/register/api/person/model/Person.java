@@ -1,5 +1,6 @@
 package com.people.register.api.person.model;
 
+import com.people.register.api.address.model.Address;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -7,6 +8,7 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.util.Date;
+import java.util.List;
 
 @Getter
 @Setter
@@ -23,6 +25,5 @@ public class Person {
     private String placeOfBirth;
     private String nationality;
     private String cpf;
-
-
+    private List<Address> addresses;
 }
