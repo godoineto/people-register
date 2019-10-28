@@ -1,11 +1,10 @@
-package com.people.register.api.address.v2.dto;
+package com.people.register.api.address.model;
 
 import lombok.Getter;
 import lombok.Setter;
-
 @Getter
 @Setter
-public class AddressV2DTO {
+public class Address {
 
     private String id;
     private String zipCode;

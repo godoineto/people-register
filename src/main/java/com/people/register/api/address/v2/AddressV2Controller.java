@@ -1,6 +1,6 @@
-package com.people.register.api.address.v1;
+package com.people.register.api.address.v2;
 
-import com.people.register.api.address.v1.dto.AddressV1DTO;
+import com.people.register.api.address.v2.dto.AddressV2DTO;
 import io.swagger.annotations.Api;
 import lombok.val;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,9 +17,9 @@ import java.util.List;
 public class AddressV2Controller {
 
     @GetMapping
-    public List<AddressV1DTO> list(@PathParam("personId") String personId) {
-        List<AddressV1DTO> addresses = new ArrayList<>();
-        val address = new AddressV1DTO();
+    public List<AddressV2DTO> list(@PathParam("personId") String personId) {
+        List<AddressV2DTO> addresses = new ArrayList<>();
+        val address = new AddressV2DTO();
         address.setCity("Palhoça");
         address.setNeighborhood("Pedra Branca");
         address.setCountry("Brasil");
