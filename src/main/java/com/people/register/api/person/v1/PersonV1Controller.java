@@ -13,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 import java.lang.reflect.Type;
 import java.util.List;
 
@@ -40,8 +39,8 @@ public class PersonV1Controller implements GeneralController {
     }
 
     @GetMapping("{id}")
-    public PersonV1DTO load(@PathParam("id") String id) {
-        return mapper.map(loader.list(), PersonV1DTO.class);
+    public PersonV1DTO load(@PathVariable("id") String id) {
+        return mapper.map(loader.find(id), PersonV1DTO.class);
     }
 
     @GetMapping

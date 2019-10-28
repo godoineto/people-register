@@ -1,6 +1,5 @@
 package com.people.register.api.person.v2;
 
-import com.people.register.api.address.v2.dto.AddressV2DTO;
 import com.people.register.api.person.model.Person;
 import com.people.register.api.person.v2.dto.NewPersonV2DTO;
 import com.people.register.api.person.v2.dto.PersonV2DTO;
@@ -14,7 +13,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
-import javax.websocket.server.PathParam;
 import java.lang.reflect.Type;
 import java.util.List;
 
@@ -37,11 +35,10 @@ public class PersonV2Controller implements GeneralController {
         return mapper.map(creator.create(mapper.map(newPerson, Person.class)), PersonV2DTO.class);
     }
 
-    @GetMapping("{personId}/addresses")
-    public List<AddressV2DTO> getAddressForPerson(@PathParam("personId") String personId) {
-        return null;
+    @GetMapping("{id}")
+    public PersonV2DTO load(@PathVariable("id") String id) {
+        return mapper.map(loader.find(id), PersonV2DTO.class);
     }
-
     @GetMapping
     public List<PersonV2DTO> list() {
         Type listType = new TypeToken<List<PersonV2DTO>>(){}.getType();
