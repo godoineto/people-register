@@ -1,4 +1,4 @@
-package com.people.register.api.address.model;
+package com.people.register.api.person.model;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,4 +1,4 @@
-package com.people.register.api.address.v2.dto;
+package com.people.register.api.person.v2.dto;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,6 +1,5 @@
 package com.people.register.api.person.model;
 
-import com.people.register.api.address.model.Address;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.data.annotation.Id;
@@ -26,4 +25,16 @@ public class Person {
     private String nationality;
     private String cpf;
     private List<Address> addresses;
+
+    public Person update(Person person) {
+        this.name = person.getName();
+        this.gender = person.getGender();
+        this.email = person.getEmail();
+        this.birth = person.getBirth();
+        this.placeOfBirth = person.getPlaceOfBirth();
+        this.nationality = person.getNationality();
+        this.cpf = person.getCpf();
+        this.addresses = person.getAddresses();
+        return this;
+    }
 }
