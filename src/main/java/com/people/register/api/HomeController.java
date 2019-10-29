@@ -10,8 +10,8 @@ public class HomeController {
     @GetMapping
     public String home() {
         String helloMessage = "<h2>Hello, guys!</h2><br/>";
-        helloMessage += "<b>To get access to repository check <a href=\"http://people-register.herokuapp.com/source\">this</a>.</b><br/>";
-        helloMessage += "<b>To access API documentation check <a href=\"http://people-register.herokuapp.com/swagger-ui.html\">this</a>.</b>";
+        helloMessage += "<b>To get access to repository check <a href=\"https://people-register.herokuapp.com/source\">this</a>.</b><br/>";
+        helloMessage += "<b>To access API documentation check <a href=\"https://people-register.herokuapp.com/swagger-ui.html\">this</a>.</b>";
         return helloMessage;
     }
 
