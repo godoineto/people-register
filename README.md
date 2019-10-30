@@ -42,6 +42,7 @@ mvn install
 
 <p>Run project:</p>
 
-```java -jar target/register-0.0.1-SNAPSHOT.jar
 
+```
+java -jar target/register-0.0.1-SNAPSHOT.jar
 ```
