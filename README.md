@@ -53,5 +53,7 @@ java -jar target/register-0.0.1-SNAPSHOT.jar
 <p align="center">
   <h2 align="center">API Documentations:</h2>
 </p>
-<a href="http://people-register.herokuapp.com/swagger-ui.html">Swagger UI</a>
-<a href="https://documenter.getpostman.com/view/4999425/SW11Vxs4?version=latest">Postman Docs</a>
+<ul>
+  <li><a href="http://people-register.herokuapp.com/swagger-ui.html">Swagger UI</a></li>
+  <li><a href="https://documenter.getpostman.com/view/4999425/SW11Vxs4?version=latest">Postman Docs</a></li>
+</ul>
