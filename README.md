@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://github.com/godoineto/register/blob/master/images/people-icon-2.png" width="120px" heigth="120px"/>
-<h1 align="center">PEOPLE REGISTER</h1></br>
+  <a href="http://people-register.herokuapp.com/"><img src="https://github.com/godoineto/register/blob/master/images/people-icon-2.png" width="120px" heigth="120px"/>
+<h1 align="center">PEOPLE REGISTER</h1></a></br>
 </p>
 
 <h2 align="center">Demand description <a href="https://github.com/godoineto/register/issues/1">#1</a></h2>
@@ -46,3 +46,12 @@ mvn install
 ```
 java -jar target/register-0.0.1-SNAPSHOT.jar
 ```
+
+
+
+<br/>
+<p align="center">
+  <h2 align="center">API Documentations:</h2>
+</p>
+<a href="http://people-register.herokuapp.com/swagger-ui.html">Swagger UI</a>
+<a href="https://documenter.getpostman.com/view/4999425/SW11Vxs4?version=latest">Postman Docs</a>
