@@ -57,3 +57,6 @@ java -jar target/register-0.0.1-SNAPSHOT.jar
   <li><a href="http://people-register.herokuapp.com/swagger-ui.html">Swagger UI</a></li>
   <li><a href="https://documenter.getpostman.com/view/4999425/SW11Vxs4?version=latest">Postman Docs</a></li>
 </ul>
+<br/>
+
+**To know more about access the demand description [here](https://github.com/godoineto/register/issues/1).**
