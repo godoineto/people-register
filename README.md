@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/godoineto/register/master/images/people-icon-2.png?token=AGOF3BZ7QGJMG37W5PBILAS5XDUDA" width="120px" heigth="120px"/>
+  <img src="https://github.com/godoineto/register/blob/master/images/people-icon-2.png" width="120px" heigth="120px"/>
 <h1 align="center">PEOPLE REGISTER</h1></br>
 </p>
 
@@ -8,13 +8,13 @@
 <br/>
 <h2 align="center">Used technologies</h2>
 <p align="center">
-<img src="https://raw.githubusercontent.com/godoineto/register/master/images/java.png?token=AGOF3BZV4UCMFOYAS6UWJ425XDHUQ" width="60px" heigth="60px"/>
-<img src="https://raw.githubusercontent.com/godoineto/register/master/images/spring.jpg?token=AGOF3B76X3SQVRJS73GJV3S5XDIR6" width="60px" heigth="60px"/>
-<img src="https://raw.githubusercontent.com/godoineto/register/master/images/mongo.jpg?token=AGOF3B5VZEU3GSGLNNIMI6C5XDHUW" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/register/blob/master/images/java.png" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/register/blob/master/images/spring.jpg" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/register/blob/master/images/mongo.jpg" width="60px" heigth="60px"/>
 <img src="https://github.com/godoineto/register/blob/master/images/heroku.png" width="60px" heigth="60px"/>
-<img src="https://raw.githubusercontent.com/godoineto/register/master/images/swagger.png?token=AGOF3B5XDJOVFHHS4JKQEOC5XDHVC" width="60px" heigth="60px"/>
-<img src="https://raw.githubusercontent.com/godoineto/register/master/images/javascript.png?token=AGOF3B7QSPX5VFRYET2M5KK5XDQWE" width="60px" heigth="60px"/>
-<img src="https://raw.githubusercontent.com/godoineto/register/master/images/postman.png?token=AGOF3B4HEZGKDULUIW55OZC5XDHU4" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/register/blob/master/images/swagger.png" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/register/blob/master/images/javascript.png" width="60px" heigth="60px"/>
+<img src="https://github.com/godoineto/register/blob/master/images/postman.png" width="60px" heigth="60px"/>
 </p>
 <br/>
 <p align="center">
