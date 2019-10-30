@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/godoineto/register/master/images/people-icon-2.png?token=AGOF3B6WZBKOZSLW6CXIDS25XDHNQ" width="120px" heigth="120px"/>
+  <img src="https://raw.githubusercontent.com/godoineto/register/master/images/people-icon-2.png?token=AGOF3BZ7QGJMG37W5PBILAS5XDUDA" width="120px" heigth="120px"/>
 <h1 align="center">PEOPLE REGISTER</h1></br>
 </p>
 
