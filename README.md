@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="http://people-register.herokuapp.com/"><img src="https://github.com/godoineto/register/blob/master/images/people-icon-2.png" width="120px" heigth="120px"/>
+  <a href="#"><img src="https://github.com/godoineto/register/blob/master/images/people-icon-2.png" width="120px" heigth="120px"/>
 <h1 align="center">PEOPLE REGISTER</h1></a></br>
 </p>
 
@@ -54,7 +54,7 @@ java -jar target/register-0.0.1-SNAPSHOT.jar
   <h2 align="center">API Documentations:</h2>
 </p>
 <ul>
-  <li><a href="http://people-register.herokuapp.com/swagger-ui.html">Swagger UI</a></li>
+  <li><a href="h#">Swagger UI</a></li>
   <li><a href="https://documenter.getpostman.com/view/4999425/SW11Vxs4?version=latest">Postman Docs</a></li>
 </ul>
 <br/>
